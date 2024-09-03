@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SillyThings'
 import ThrillingThings from './pages/ThrillingThings/ThrillingThings'
+import AdisThings from './pages/AdisThings/AdisThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -71,6 +72,14 @@ const App = () => {
     },
   ]
 
+  const adisThings = [
+    {
+      name: "Breakfast Items",
+      image: "https://imgs.xkcd.com/comics/eggs.png",  
+      attributes: ["milk", "cereal", "eggs", "coffee"],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -90,6 +99,10 @@ const App = () => {
       <Route
         path="/the-thrilling-things"
         element={<ThrillingThings things={austinsThings} />}
+      />
+      <Route
+        path="/adis-things"
+        element={<AdisThings things={adisThings} />}
       />
     </Routes>
   )
