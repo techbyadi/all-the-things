@@ -67,7 +67,7 @@ const App = () => {
     {
       name: "Breakfast Items",
       image: "https://imgs.xkcd.com/comics/eggs.png",  
-      attributes: ["milk", "cereal", "eggs", "juice"],
+      attributes: ["milk", "cereal", "eggs", "watermelon"],
     },
   ]
 
