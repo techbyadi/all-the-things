@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SillyThings'
+import ThrillingThings from './pages/ThrillingThings/ThrillingThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -61,6 +62,14 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ]
+  
+  const austinsThings = [
+    {
+      name: "roller coasters",
+      image: "https://i.pinimg.com/originals/8e/b2/b6/8eb2b6a9870b8847edc3937a578a1187.png",  
+      attributes: ["fun", "thrilling", "intense", "scary"],
+    },
+  ]
 
   return (
     <Routes>
@@ -77,6 +86,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-thrilling-things"
+        element={<ThrillingThings things={austinsThings} />}
       />
     </Routes>
   )
